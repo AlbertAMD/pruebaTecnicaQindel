@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "d0c431ca-1128-4451-80ab-7f4a935b8594",
+		"name": "JuegosOlimpicos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener Lista Ciudades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/juegosolimpicos/listaCiudades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juegosolimpicos",
+						"listaCiudades"
+					]
+				},
+				"description": "Obtiene la lista de todas las ciudades"
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Nueva Sede",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"year\":2028,\r\n\t\"tipoJuegosOlimpicos\":{\r\n\t\t\"descripcion\":\"VERANO\"\r\n\t},\r\n\t\"sede\":\t{\r\n\t\t\"nombreCiudad\":\"VIGO\",\r\n\t\t\"pais\": {\r\n\t\t\t\"nombrePais\":\"ESPAÑA\",\r\n\t\t\t\"codigoPais\":\"ES\"\r\n\t\t},\r\n\t\t\"valorCiudad\":25\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/juegosolimpicos/crearSede",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juegosolimpicos",
+						"crearSede"
+					]
+				},
+				"description": "Crea una nueva sede"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Sede",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/juegosolimpicos/eliminarSede?year=2040&tipoJuegos=PRIMAVERA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juegosolimpicos",
+						"eliminarSede"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2040"
+						},
+						{
+							"key": "tipoJuegos",
+							"value": "PRIMAVERA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Todas Sedes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/juegosolimpicos/allSedes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juegosolimpicos",
+						"allSedes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Sede",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"year\":2020,\r\n\t\"tipoJuegosOlimpicos\":{\r\n\t\t\"descripcion\":\"OTOÑO\"\r\n\t},\r\n\t\"sede\":\t{\r\n\t\t\"nombreCiudad\":\"TOKYO\"\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/juegosolimpicos/actualizarSede?year=2020&tipoJuegos=OTOÑO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juegosolimpicos",
+						"actualizarSede"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2020"
+						},
+						{
+							"key": "tipoJuegos",
+							"value": "OTOÑO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Sede By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/juegosolimpicos/sedeById?year=2020&tipoJuegos=VERANO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juegosolimpicos",
+						"sedeById"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2020"
+						},
+						{
+							"key": "tipoJuegos",
+							"value": "VERANO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Sedes By Filters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"year\":2028,\r\n\t\"tipoJuegosOlimpicos\":{\r\n\t\t\"descripcion\":\"VERANO\"\r\n\t},\r\n\t\"sede\":\t{\r\n\t\t\"nombreCiudad\":\"VIGO\",\r\n\t\t\"pais\": {\r\n\t\t\t\"nombrePais\":\"ESPAÑA\",\r\n\t\t\t\"codigoPais\":\"ES\"\r\n\t\t},\r\n\t\t\"valorCiudad\":78\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/juegosolimpicos/sedesByFilters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juegosolimpicos",
+						"sedesByFilters"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
