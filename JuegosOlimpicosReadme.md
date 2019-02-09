@@ -49,3 +49,4 @@ y poniendo como contraseña "root", como se indico en el momento de levantar la 
 ``` 
 especificando que se arranque en la ip 172.18.0.6
  - Con la aplicación levantada y la base de datos levantada podemos probar los servicios REST utilizando para ello la herramienta postman. En el repositorio se incluye un archivo con peticiones para importarlo en postman:
+https://github.com/AlbertAMD/pruebaTecnicaQindel/blob/master/JuegosOlimpicos.postman_collection.json
