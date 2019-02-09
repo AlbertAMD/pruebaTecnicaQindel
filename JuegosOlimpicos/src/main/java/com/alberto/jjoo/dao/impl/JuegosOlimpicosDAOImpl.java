@@ -441,7 +441,7 @@ public class JuegosOlimpicosDAOImpl implements JuegosOlimpicosDAO {
 		sql.append("PAIS.nombre_pais NOMBRE_PAIS, ");
 		sql.append("PAIS.codigo_pais CODIGO_PAIS, ");
 		sql.append("PAIS.valor_pais VALOR_PAIS ");
-		sql.append("FROM pais ");
+		sql.append("FROM pais PAIS ");
 		sql.append("WHERE PAIS.nombre_pais LIKE :nombrePais ");
 		
 		return sql.toString();

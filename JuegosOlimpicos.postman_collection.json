@@ -15,10 +15,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/juegosolimpicos/listaCiudades",
+					"raw": "http://172.18.0.5:8080/juegosolimpicos/listaCiudades",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"172",
+						"18",
+						"0",
+						"5"
 					],
 					"port": "8080",
 					"path": [
@@ -47,10 +50,13 @@
 					"raw": "{\r\n\t\"year\":2028,\r\n\t\"tipoJuegosOlimpicos\":{\r\n\t\t\"descripcion\":\"VERANO\"\r\n\t},\r\n\t\"sede\":\t{\r\n\t\t\"nombreCiudad\":\"VIGO\",\r\n\t\t\"pais\": {\r\n\t\t\t\"nombrePais\":\"ESPAÑA\",\r\n\t\t\t\"codigoPais\":\"ES\"\r\n\t\t},\r\n\t\t\"valorCiudad\":25\r\n\t}\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/juegosolimpicos/crearSede",
+					"raw": "http://172.18.0.5:8080/juegosolimpicos/crearSede",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"172",
+						"18",
+						"0",
+						"5"
 					],
 					"port": "8080",
 					"path": [
@@ -72,10 +78,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/juegosolimpicos/eliminarSede?year=2040&tipoJuegos=PRIMAVERA",
+					"raw": "http://172.18.0.5:8080/juegosolimpicos/eliminarSede?year=2040&tipoJuegos=PRIMAVERA",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"172",
+						"18",
+						"0",
+						"5"
 					],
 					"port": "8080",
 					"path": [
@@ -106,10 +115,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/juegosolimpicos/allSedes",
+					"raw": "http://172.18.0.5:8080/juegosolimpicos/allSedes",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"172",
+						"18",
+						"0",
+						"5"
 					],
 					"port": "8080",
 					"path": [
@@ -137,10 +149,13 @@
 					"raw": "{\r\n\t\"year\":2020,\r\n\t\"tipoJuegosOlimpicos\":{\r\n\t\t\"descripcion\":\"OTOÑO\"\r\n\t},\r\n\t\"sede\":\t{\r\n\t\t\"nombreCiudad\":\"TOKYO\"\r\n\t}\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/juegosolimpicos/actualizarSede?year=2020&tipoJuegos=OTOÑO",
+					"raw": "http://172.18.0.5:8080/juegosolimpicos/actualizarSede?year=2020&tipoJuegos=OTOÑO",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"172",
+						"18",
+						"0",
+						"5"
 					],
 					"port": "8080",
 					"path": [
@@ -171,10 +186,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/juegosolimpicos/sedeById?year=2020&tipoJuegos=VERANO",
+					"raw": "http://172.18.0.5:8080/juegosolimpicos/sedeById?year=2020&tipoJuegos=VERANO",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"172",
+						"18",
+						"0",
+						"5"
 					],
 					"port": "8080",
 					"path": [
@@ -215,10 +233,13 @@
 					"raw": "{\r\n\t\"year\":2028,\r\n\t\"tipoJuegosOlimpicos\":{\r\n\t\t\"descripcion\":\"VERANO\"\r\n\t},\r\n\t\"sede\":\t{\r\n\t\t\"nombreCiudad\":\"VIGO\",\r\n\t\t\"pais\": {\r\n\t\t\t\"nombrePais\":\"ESPAÑA\",\r\n\t\t\t\"codigoPais\":\"ES\"\r\n\t\t},\r\n\t\t\"valorCiudad\":78\r\n\t}\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/juegosolimpicos/sedesByFilters",
+					"raw": "http://172.18.0.5:8080/juegosolimpicos/sedesByFilters",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"172",
+						"18",
+						"0",
+						"5"
 					],
 					"port": "8080",
 					"path": [
